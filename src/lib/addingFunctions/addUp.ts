@@ -17,7 +17,7 @@ export async function sumVault(obj: any) {
             total += strange.balance
             
         } catch (error) {
-            console.log('Error at: ' + key, error)
+            console.log('Error at: ' + key)
         }
         
     }

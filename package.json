@@ -3,7 +3,8 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun run src/index.ts"
+    "dev": "bun run src/index.ts",
+    "smartweaveState": "smartweave read usjm4PCxUd5mtaon7zc97-dt-3qf67yPyqgzLnLqk5A --prettify > smartweaveState.json"
   },
   "devDependencies": {
     "bun-types": "latest"
@@ -12,6 +13,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "fs": "^0.0.1-security",
     "warp-contracts": "^1.4.26",
     "warp-contracts-lmdb": "^1.1.10",
     "warp-contracts-plugin-deploy": "^1.0.12"
