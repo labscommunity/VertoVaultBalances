@@ -3,8 +3,9 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun run src/index.ts",
-    "smartweaveState": "smartweave read usjm4PCxUd5mtaon7zc97-dt-3qf67yPyqgzLnLqk5A --prettify > smartweaveState.json"
+    "dev": "bun run prettier && bun run src/index.ts",
+    "smartweaveState": "smartweave read usjm4PCxUd5mtaon7zc97-dt-3qf67yPyqgzLnLqk5A --prettify > smartweaveState.json",
+    "prettier": "prettier --write ."
   },
   "devDependencies": {
     "bun-types": "latest"
@@ -14,6 +15,7 @@
   },
   "dependencies": {
     "fs": "^0.0.1-security",
+    "prettier": "^3.1.1",
     "warp-contracts": "^1.4.26",
     "warp-contracts-lmdb": "^1.1.10",
     "warp-contracts-plugin-deploy": "^1.0.12"
